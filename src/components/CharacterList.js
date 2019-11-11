@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import axios from 'axios';
+import {BrowserRouter as Router} from "react-router-dom";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
