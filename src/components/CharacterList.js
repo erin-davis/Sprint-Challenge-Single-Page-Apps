@@ -29,6 +29,7 @@ export default function CharacterList() {
         species={item.species}
         status={item.status}
         origin={item.origin.name}
+        img={item.image}
         />
       })}
     </section>
