@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
+import styled from "styled-components";
+
+
+
+
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -21,10 +26,10 @@ export default function CharacterList() {
   }, []);
 
   return (
-    <section className="character-list">
+    <div className="tba">
       {chara.map(item =>{
         return <CharacterCard
-        key={item.id}
+        key={item}
         name={item.name}
         species={item.species}
         status={item.status}
@@ -32,6 +37,6 @@ export default function CharacterList() {
         img={item.image}
         />
       })}
-    </section>
+    </div>
   );
 }

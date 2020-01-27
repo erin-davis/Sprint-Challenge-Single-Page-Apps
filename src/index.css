@@ -41,3 +41,13 @@ header h1 {
 .profile-pic{
   width: 100px;
 }
+
+.nav-links{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.links{
+  text-decoration: none;
+  color: black;
+}

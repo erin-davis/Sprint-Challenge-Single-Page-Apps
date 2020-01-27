@@ -9,8 +9,8 @@ export default function App() {
     <main>
       <Header />
       <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/character-list">Characters</Link>
+        <Link className="links" to="/">Home </Link>
+        <Link className="links" to="/character-list">Characters </Link>
       </div>
       <Switch>
         <Route path="/character-list">
