@@ -8662,6 +8662,11 @@ react-event-listener@^0.6.0:
     prop-types "^15.6.0"
     warning "^4.0.1"
 
+react-filter-search@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/react-filter-search/-/react-filter-search-1.0.9.tgz#4c7666bdc84f8fe706b9c258bff82bb5d6a94652"
+  integrity sha512-hwbd1/Bhe5ZMdv9+RcCXJJlIl5uU+api+kxzzlxWNH8o7gmpxDdKWc8HMl1jpe8ACC7pGN3YbGeAht2q4ntOeg==
+
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
