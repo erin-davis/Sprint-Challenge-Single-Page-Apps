@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import {useParams} from "react-router-dom";
 import CharacterCard from "./CharacterCard";
 import styled from "styled-components";
 import SearchForm from "./SearchForm";
 
 export default function CharacterList(props) {
   // TODO: Add useState to track data from useEffect
+
   const [chara, setChara] = useState([]);
   const [filteredNames, setFilteredNames] = useState([]);
 
@@ -25,6 +27,7 @@ export default function CharacterList(props) {
     .catch(err =>{
       console.log("this is where the error is coming from :",err);
     })
+
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
   }, []);
 

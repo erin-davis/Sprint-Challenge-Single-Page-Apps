@@ -3,6 +3,7 @@ import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList";
 import WelcomePage from "./components/WelcomePage";
 import SearchForm from "./components/SearchForm";
+import CharacterCard from "./components/CharacterCard";
 import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 
 export default function App(props) {
@@ -15,6 +16,9 @@ export default function App(props) {
       </div>
       <SearchForm />
       <Switch>
+        <Route path={`/character-list/:${props.id}`}>
+          <CharacterCard id={props.id}/>
+        </Route>
         <Route path="/character-list">
           <CharacterList />
         </Route>
